@@ -8,5 +8,5 @@ pip install eth-account
 
 ## Execution
 ```bash
-pip wallet_generator.py
+python wallet_generator.py
 ```
