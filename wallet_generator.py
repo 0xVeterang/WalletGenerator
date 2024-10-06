@@ -14,8 +14,8 @@ def save_keys(address, private_key):
 def main():
     while True:
         address, private_key = generate_keypair()
-        # 공개 키의 끝 2자리를 확인
-        if address[-4:] == address[-1] * 4:  # 마지막 4자리가 동일한지 확인
+        # 공개 키의 끝 6자리를 확인
+        if address[-6:] == address[-1] * 6:  # 마지막 6자리가 동일한지 확인
             print(f'Found: {address} with Private Key: {private_key}')
             save_keys(address, private_key)
             break  # 종료
